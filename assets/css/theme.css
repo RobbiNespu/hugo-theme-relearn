@@ -3027,21 +3027,34 @@ body.notfound #shrug svg {
 
 /* Custom Heading Styles for Better Visual Hierarchy */
 
-/* H1 - Main Page Title */
+/* H1 - Main Page Title - Refined and Elegant */
 h1 {
   color: #2c3e50 !important;
-  font-size: 2.5rem !important;
-  font-weight: 700 !important;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif !important;
-  border-bottom: 4px solid #3498db !important;
-  padding-bottom: 0.5rem !important;
+  font-size: 2.8rem !important;
+  font-weight: 600 !important;
+  font-family: var(--INTERNAL-MAIN-TITLES-H1-font) !important;
+  border-bottom: 3px solid #3498db !important;
+  padding-bottom: 0.75rem !important;
   margin-bottom: 1.5rem !important;
-  text-transform: uppercase !important;
-  letter-spacing: 1px !important;
-  background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%) !important;
-  padding: 1rem !important;
-  border-radius: 8px !important;
-  box-shadow: 0 2px 4px rgba(0,0,0,0.1) !important;
+  text-transform: none !important;
+  letter-spacing: 0.5px !important;
+  background: linear-gradient(135deg, #f8f9fa 0%, #ffffff 100%) !important;
+  padding: 1.25rem 1.5rem !important;
+  border-radius: 6px !important;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.08) !important;
+  text-align: left !important;
+  position: relative !important;
+}
+
+h1::before {
+  content: "" !important;
+  position: absolute !important;
+  left: 0 !important;
+  top: 0 !important;
+  bottom: 0 !important;
+  width: 4px !important;
+  background: linear-gradient(180deg, #3498db 0%, #2980b9 100%) !important;
+  border-radius: 6px 0 0 6px !important;
 }
 
 /* H2 - Major Sections */
@@ -3150,8 +3163,8 @@ h1:hover, h2:hover, h3:hover, h4:hover {
 /* Responsive adjustments */
 @media (max-width: 768px) {
   h1 {
-    font-size: 2rem !important;
-    padding: 0.75rem !important;
+    font-size: 2.2rem !important;
+    padding: 1rem 1.25rem !important;
   }
   
   h2 {
