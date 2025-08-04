@@ -1,0 +1,161 @@
+/* Custom Heading Styles for Better Visual Hierarchy */
+
+/* H1 - Main Page Title */
+h1 {
+  color: #2c3e50 !important;
+  font-size: 2.5rem !important;
+  font-weight: 700 !important;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif !important;
+  border-bottom: 4px solid #3498db !important;
+  padding-bottom: 0.5rem !important;
+  margin-bottom: 1.5rem !important;
+  text-transform: uppercase !important;
+  letter-spacing: 1px !important;
+  background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%) !important;
+  padding: 1rem !important;
+  border-radius: 8px !important;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1) !important;
+}
+
+/* H2 - Major Sections */
+h2 {
+  color: #34495e !important;
+  font-size: 2rem !important;
+  font-weight: 600 !important;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif !important;
+  border-left: 5px solid #e74c3c !important;
+  padding-left: 1rem !important;
+  margin-top: 2rem !important;
+  margin-bottom: 1rem !important;
+  background: linear-gradient(90deg, #fff5f5 0%, #ffffff 100%) !important;
+  padding: 0.75rem 1rem !important;
+  border-radius: 0 8px 8px 0 !important;
+}
+
+/* H3 - Subsections */
+h3 {
+  color: #2c3e50 !important;
+  font-size: 1.5rem !important;
+  font-weight: 600 !important;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif !important;
+  border-bottom: 2px solid #f39c12 !important;
+  padding-bottom: 0.5rem !important;
+  margin-top: 1.5rem !important;
+  margin-bottom: 0.75rem !important;
+  position: relative !important;
+}
+
+h3::before {
+  content: "▶" !important;
+  color: #f39c12 !important;
+  margin-right: 0.5rem !important;
+  font-size: 0.8em !important;
+}
+
+/* H4 - Minor Sections */
+h4 {
+  color: #34495e !important;
+  font-size: 1.25rem !important;
+  font-weight: 500 !important;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif !important;
+  background: #ecf0f1 !important;
+  padding: 0.5rem 1rem !important;
+  border-radius: 4px !important;
+  margin-top: 1.25rem !important;
+  margin-bottom: 0.5rem !important;
+  border-left: 3px solid #95a5a6 !important;
+}
+
+/* H5 - Sub-subsections */
+h5 {
+  color: #7f8c8d !important;
+  font-size: 1.1rem !important;
+  font-weight: 500 !important;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif !important;
+  text-transform: uppercase !important;
+  letter-spacing: 0.5px !important;
+  margin-top: 1rem !important;
+  margin-bottom: 0.5rem !important;
+  position: relative !important;
+}
+
+h5::before {
+  content: "●" !important;
+  color: #95a5a6 !important;
+  margin-right: 0.5rem !important;
+  font-size: 0.6em !important;
+}
+
+/* H6 - Minor Headings */
+h6 {
+  color: #95a5a6 !important;
+  font-size: 1rem !important;
+  font-weight: 400 !important;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif !important;
+  font-style: italic !important;
+  border-bottom: 1px dotted #bdc3c7 !important;
+  padding-bottom: 0.25rem !important;
+  margin-top: 0.75rem !important;
+  margin-bottom: 0.5rem !important;
+}
+
+/* H7 - Smallest Headings (if supported) */
+h7 {
+  color: #bdc3c7 !important;
+  font-size: 0.9rem !important;
+  font-weight: 400 !important;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif !important;
+  text-transform: lowercase !important;
+  background: #f8f9fa !important;
+  padding: 0.25rem 0.5rem !important;
+  border-radius: 3px !important;
+  margin-top: 0.5rem !important;
+  margin-bottom: 0.25rem !important;
+  display: inline-block !important;
+}
+
+/* Hover effects for interactive headings */
+h1:hover, h2:hover, h3:hover, h4:hover {
+  transform: translateX(2px) !important;
+  transition: transform 0.2s ease-in-out !important;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  h1 {
+    font-size: 2rem !important;
+    padding: 0.75rem !important;
+  }
+  
+  h2 {
+    font-size: 1.75rem !important;
+    padding: 0.5rem 0.75rem !important;
+  }
+  
+  h3 {
+    font-size: 1.25rem !important;
+  }
+  
+  h4 {
+    font-size: 1.1rem !important;
+    padding: 0.4rem 0.75rem !important;
+  }
+}
+
+/* Print styles */
+@media print {
+  h1, h2, h3, h4, h5, h6 {
+    color: #000 !important;
+    background: none !important;
+    border: none !important;
+    box-shadow: none !important;
+  }
+  
+  h1 {
+    border-bottom: 2px solid #000 !important;
+  }
+  
+  h2 {
+    border-left: 3px solid #000 !important;
+  }
+} 
